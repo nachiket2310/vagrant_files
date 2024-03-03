@@ -11,7 +11,7 @@ Vagrant.configure(VAGRANT_API_VERSION) do |config|
     # Display the VirtualBox GUI when booting the machine
      vb.gui = true
      vb.cpu = 2    
-     vb.memory = "2048"
+     vb.memory = "4096"
    end
    config.vm.provision "shell", inline: <<-SHELL
      apt-get -y update
